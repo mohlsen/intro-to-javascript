@@ -27,53 +27,58 @@
 
     <p class="lead">
         Based on Douglas Crockford's presentation
-        <a href="http://www.youtube.com/watch?v=v2ifWcnQs6M">The JavaScript Programming Language
-        </a>.
+        <a href="http://youtu.be/v2ifWcnQs6M?t=9s" target="_blank">The JavaScript Programming Language</a>.
     </p>
 	<p class="note">
-		&nbsp;It is encouraged that users modify and play around with the code examples in this tutorial for a better learning experience.
+		It is encouraged that users modify and play around with the code examples in this tutorial for a better learning experience.
 	</p>
 </div>
 
 
-<!-- ******************************************************************* -->
+<!-- **************************JavaScript******************************* -->
+
 <div class="section">
     <div class="section-heading">
         <h2>JavaScript is the world's most misunderstood programming language.</h2>
-		<p><a href="http://youtu.be/v2ifWcnQs6M?t=44s" target="_blank">0:44 </a></p>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=44s" target="_blank">0:44 </a>
     </div>
 </div>
 <ul>
-    <li>It has nothing to do with Java.</li>
-    <li><i>"Script"</i> makes it sound incomplete.</li>
-    <li>It has some design errors.  Some have been fixed.</li>
-    <li>It has been type cast as <i>"the language of the browser."</i>
-        <li>People assume that the difficulty with web programming is caused by JS.</li>
-    </li>
-    <li>ECMA did not do a good job in writing the ECMAScript standard.</li>
+    <li>It has nothing to do with Java</li>
+    <li><i>"Script"</i> makes it sound incomplete</li>
+    <li>It has some design errors; Some have been fixed</li>
+    <li>It has been type cast as <i>"the language of the browser"</i></li>
+    <li>People assume that the difficulty with web programming is caused by JS</li>
+    <li>ECMA did not do a good job in writing the ECMAScript standard</li>
 </ul>
+
+<!-- ***************************History********************************* -->
 
 <div class="section">
     <div class="section-heading">
         <h2>History</h2>
-		<p><a href="http://youtu.be/v2ifWcnQs6M?t=3m50s" target="_blank">3:50</a></p>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=3m50s" target="_blank">3:50</a>
     </div>
     <ul>
-        <li>1992 - James Gosling at Sun created Oak</li>
-        <li>1995 - Netscape determined that Java was too heavy so Brendan Eich created LiveScript</li>
-        <li>The web was seen as the way to break away from Microsoft.</li>
-        <li>Sun and Netscape created an alliance.</li>
-        <li>1996 - Microsoft needed to compete in this area, so they reverse engineered JavaScript to get JScipt.</li>
-        <li>Standardized ECMAScript so that Microsoft could not assume control of direction.</li>
+        <li>1992 - James Gosling at Sun created Oak, a successor to C++, which was later renamed to Java</li>
+        <li>1995 - Netscape determined that Java was too heavy for browsers so Brendan Eich created LiveScript</li>
+        <li>The web was seen as the way to break away from Microsoft</li>
+        <li>Sun and Netscape created an alliance to compete with Microsoft</li>
+		<li>Sun wanted Java to be the language of the browser; Netscape insisted on using LiveScript</li>
+		<li>Marc Andreessen, founder of Netscape, changed the name of LiveScript to JavaScript</li>
+        <li>1996 - Microsoft needed to compete in this area, so they reverse engineered JavaScript to get JScipt</li>
+        <li>Standardized ECMAScript so that Microsoft could not assume control of direction</li>
         <li>1998 - ECMAScript</li>
-        <li>We are now at ECMAScript 5 and waiting for ECMAScript 6.</li>
+        <li>We are now at ECMAScript 5 and waiting for ECMAScript 6 in late 2014</li>
     </ul>
 </div>
+
+<!-- *************************Key Tenets******************************** -->
 
 <div class="section">
     <div class="section-heading">
         <h2>Key Tenets</h2>
-		<p><a href="http://youtu.be/v2ifWcnQs6M?t=10m38s" target="_blank">10:38</a></p>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=10m38s" target="_blank">10:38</a>
     </div>
     <ul>
         <li>Load and go delivery (delivered as textual source code)</li>
@@ -85,10 +90,12 @@
     </ul>
 </div>
 
+<!-- ***************************Values********************************** -->
+
 <div class="section">
     <div class="section-heading">
         <h2>Values</h2>
-		<p><a href="http://youtu.be/v2ifWcnQs6M?t=13m22s" target="_blank">13:22</a></p>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=13m22s" target="_blank">13:22</a>
     </div>
     <ul>
         <li>Number</li>
@@ -100,10 +107,12 @@
     </ul>
 </div>
 
+<!-- ***************************Number********************************** -->
+
 <div class="section">
     <div class="section-heading">
         <h2>Number</h2>
-		<p><a href="http://youtu.be/v2ifWcnQs6M?t=13m34s" target="_blank">13:34</a></p>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=13m34s" target="_blank">13:34</a>
     </div>
 	<div class="example">
         <p>There is <em>only one</em> number type (64-bit float a.k.a. Double)</p>
@@ -115,15 +124,16 @@ console.log('0.1 + 0.2 = ' + sum);
 	</div>
 </div>
 
-<!-- ******************************************************************* -->
+<!-- ****************************Nan************************************ -->
 
 <div class="section">
     <div class="section-heading">
         <h2>NaN</h2>
-		<p><a href="http://youtu.be/v2ifWcnQs6M?t=14m30s" target="_blank">14:30</a></p>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=14m30s" target="_blank">14:30</a>
     </div>
 
     <div class="example">
+		<p>NaN: Not a Number</p>
         <p>NaN is the result of invalid operations.</p>
         <div class="codeblock">
 console.log('0/0 is ' + 0/0);
@@ -153,11 +163,11 @@ console.log('typeof NaN is ' + typeof NaN);
     </div>
 </div>
 
-<!-- ******************************************************************* -->
+<!-- **************************Number()********************************* -->
 <div class="section">
     <div class="section-heading">
         <h2>Number()</h2>
-		<p><a href="http://youtu.be/v2ifWcnQs6M?t=15m27s" target="_blank">15:27</a></p>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=15m27s" target="_blank">15:27</a>
     </div>
 
     <div class="example">
@@ -188,16 +198,15 @@ console.log('parseInt("10", 16) is ' + parseInt("10", 16));
     </div>
 </div>
 
-<!-- ******************************************************************* -->
+<!-- ************************Math Object******************************** -->
 <div class="section">
     <div class="section-heading">
-        <p>17:12</p>
-        <h2>Math object</h2>
-		<p><a href="" target="_blank"></a></p>
+        <h2>Math Object</h2>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=16m37s" target="_blank">16:37</a>
     </div>
 
     <div class="example">
-        <p>The Math object contains the usual suspects.</p>
+        <p>The Math object contains the usual suspects:</p>
         <ul>
             <li>abs()</li>
             <li>floor()</li>
@@ -225,7 +234,7 @@ console.log('Math.round(1.5) is ' + Math.round(1.5));
 <div class="section">
     <div class="section-heading">
         <h2>Strings</h2>
-		<p><a href="" target="_blank"></a></p>
+		<a href="" target="_blank"></a>
     </div>
     <div class="example">
         <ul>
