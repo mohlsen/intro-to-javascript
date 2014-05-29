@@ -21,6 +21,10 @@ body {
     padding: 15px;
 }
 
+.example a { color:#5AA5E8; }
+.example a:hover { color:#9AD0FF; text-decoration:none; }
+.example a:active { color:#4D95D4; }
+
 .example img {
     border: 2px solid rgba(0, 0, 0, 0.3);
     padding: 10px;

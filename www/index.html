@@ -115,8 +115,8 @@
 		<a href="http://youtu.be/v2ifWcnQs6M?t=13m34s" target="_blank">13:34</a>
     </div>
 	<div class="example">
-        <p>There is <em>only one</em> number type (64-bit float a.k.a. Double)</p>
-		<p>The problem with floating point numbers is that 0.1 + 0.2 does NOT equal 0.3</p>
+        <p>There is <em>only one</em> number type (64-bit float a.k.a. Double).</p>
+		<p>The problem with floating point numbers is that 0.1 + 0.2 does NOT equal 0.3.</p>
 		<div class="codeblock">
 var sum = 0.1 + 0.2
 console.log('0.1 + 0.2 = ' + sum);
@@ -124,7 +124,7 @@ console.log('0.1 + 0.2 = ' + sum);
 	</div>
 </div>
 
-<!-- ****************************Nan************************************ -->
+<!-- ****************************NaN************************************ -->
 
 <div class="section">
     <div class="section-heading">
@@ -133,7 +133,7 @@ console.log('0.1 + 0.2 = ' + sum);
     </div>
 
     <div class="example">
-		<p>NaN: Not a Number</p>
+		<p>NaN: Not a Number.</p>
         <p>NaN is the result of invalid operations.</p>
         <div class="codeblock">
 console.log('0/0 is ' + 0/0);
@@ -402,12 +402,12 @@ console.log(JSON.stringify(emptyObj));
     </div>
 </div>
 
-<!-- ******************************************************************* -->
+<!-- *************************Loose Typing****************************** -->
+
 <div class="section">
     <div class="section-heading">
-        <p>23:26</p>
-        <h2>Loose typing</h2>
-		<a href="" target="_blank"></a>
+        <h2>Loose Typing</h2>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=22m58s" target="_blank">22:58</a>
     </div>
 
     <div class="example">
@@ -424,64 +424,39 @@ function plusOperator(a, b) {
     return a + b;
 }
 
-console.log('plusOperator("Fred", "Flintstone") = ' + plusOperator("Fred ", "Flintstone"));
+console.log('plusOperator("Fred ", "Flintstone") = ' + plusOperator("Fred ", "Flintstone"));
 console.log('plusOperator(2, 3) = ' + plusOperator(2, 3));
         </div>
     </div>
 </div>
 
-
-<div class="section">
-    <div class="section-heading">
-        <h2>Identifiers</h2>
-    </div>
-    <div class="example">
-        <ul>
-            <li>Same as C/C++</li>
-            <li>Convention: all variables, parameters, members and function names start with lower case</li>
-            <li>Constructors start with upper case</li>
-        </ul>
-    </div>
-</div>
-<!-- ******************************************************************* -->
-
-<div class="section">
-    <div class="section-heading">
-        <h2>Comments</h2>
-		<a href="" target="_blank"></a>
-    </div>
-    <div class="example">
-        <ul>
-            <li><code>//</code></li>
-            <li><code>/* foo */</code></li>
-        </ul>
-    </div>
-</div>
-
-<!-- ******************************************************************* -->
+<!-- **************************Semicolons******************************* -->
 
 <div class="section">
     <div class="section-heading">
         <h2>Semicolons</h2>
-		<a href="" target="_blank"></a>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=23m26s" target="_blank">23:26</a>
     </div>
     <div class="example">
         <ul>
-            <li>Semicolons are (unfortunately) optional.</li>
-            <li>If you omit them, they will be automatically inserted.</li>
+            <li>Semicolons are (unfortunately) optional</li>
+            <li>If you omit them, they will be automatically inserted</li>
             <li>Prefer to leave operators at the end of your lines so a semicolon
-                will not get inserted for you.
+                will not get inserted for you
             </li>
             <li>Using a linting tool such as JSLint or JSHint (preferred) will
-                catch these cases.
+                catch these cases
             </li>
         </ul>
     </div>
 </div>
 
+<!-- **********************Curly Brace Placement************************ -->
+
 <div class="section">
     <div class="section-heading">
         <h2>Curly Brace Placement</h2>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=23m26s" target="_blank">23:26</a>
     </div>
     <div class="example">
         <ul>
@@ -492,9 +467,8 @@ console.log('plusOperator(2, 3) = ' + plusOperator(2, 3));
             </li>
             <li>Allman style will get you into trouble with automatic semicolon insertion.</li>
         </ul>
-    </div>
-    <p>Dont' do this:</p>
-    <div class="codeblock">
+		<p>Dont' do this:</p>
+		<div class="codeblock">
 function foo() {
     return
     {
@@ -503,10 +477,10 @@ function foo() {
     };
 }
 console.log(JSON.stringify(foo()));
-    </div>
-    <p></p>
-    <p>Do this instead:</p>
-    <div class="codeblock">
+		</div>
+		<p></p>
+		<p>Do this instead:</p>
+		<div class="codeblock">
 function foo() {
     return {
         first: 'Fred',
@@ -514,11 +488,118 @@ function foo() {
     };
 }
 console.log(JSON.stringify(foo()));
+		</div>
     </div>
+</div>
 
+<!-- **************************Identifiers****************************** -->
+
+<div class="section">
+    <div class="section-heading">
+        <h2>Identifiers</h2>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=23m43s" target="_blank">23:43</a>
+    </div>
+    <div class="example">
+        <ul>
+            <li>Same as C/C++</li>
+            <li>Convention: all variables, parameters, members and function names start with lower case</li>
+            <li>Constructors start with upper case</li>
+        </ul>
+    </div>
+</div>
+
+<!-- ************************Reserved Words***************************** -->
+
+<div class="section">
+	<div class="section-heading">
+		<h2>Reserved Words</h2>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=24m59s" target="_blank">24:59</a>
+	</div>
+	<div class="example">
+		<ul><li>Only words in <b>bold</b> are used in the language.</li></ul>
+		<p>
+			abstract<br>
+			boolean &emsp; <b>break</b> &emsp; byte<br>
+			<b>case &emsp; catch</b> &emsp; char &emsp; class &emsp; const &emsp; <b>continue</b><br>
+			debugger &emsp; <b>default &emsp; delete &emsp; do</b> &emsp; double<br>
+			<b>else</b> &emsp; enum &emsp; export &emsp; extends<br>
+			<b>false</b> &emsp; final &emsp; <b>finally</b> &emsp; float &emsp; <b>for &emsp; function</b><br>
+			goto<br>
+			<b>if</b> &emsp; implements &emsp; import &emsp; <b>in &emsp; instanceof</b> &emsp; int &emsp; interface<br>
+			long<br>
+			native &emsp; <b>new &emsp; null</b><br>
+			package &emsp; private &emsp; protected &emsp; public<br>
+			<b>return</b><br>
+			short &emsp; static &emsp; super &emsp; <b>switch</b> &emsp; synchronized<br>
+			<b>this &emsp; throw</b> &emsp; throws &emsp; transient &emsp; <b>true &emsp; try &emsp; typeof</b><br>
+			<b>var</b> &emsp; volatile &emsp; <b>void</b><br>
+			<b>while &emsp; with</b>
+		</p>
+	</div>
+</div>
+
+<!-- ***************************Comments******************************** -->
+
+<div class="section">
+    <div class="section-heading">
+        <h2>Comments</h2>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=25m32s" target="_blank">25:32</a>
+    </div>
+    <div class="example">
+        <ul>
+            <li><code>//</code></li>
+            <li><code>/* foo */</code></li>
+        </ul>
+    </div>
+</div>
+
+<!-- ***************************Operators******************************* -->
+
+<div class="section">
+	<div class="section-heading">
+		<h2>Operators</h2>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=25m41s" target="_blank">25:41</a>
+	</div>
+	<div class="example">
+		<ul>
+			<li><b>Arithmetic</b><p>+ &emsp; - &emsp; * &emsp; / &emsp; %</p></li>
+			<li><b>Comparison</b><p>== &emsp; != &emsp; &#60; &emsp; > &emsp; &#60;= &emsp; >=</p></li>
+			<li><b>Logical</b><p>&& &emsp; || &emsp; !</p></li>
+			<li><b>Bitwise</b><p>& &emsp; | &emsp; ^ &emsp; >> &emsp; >>> &emsp; <<</p></li>
+			<li><b>Ternary</b><p>?:</p></li>
+		</ul>
+	</div>
+</div>
+
+<!-- ******************************* + ********************************* -->
+
+<div class="section">
+	<div class="section-heading">
+		<h2>+</h2>
+		<a href="http://youtu.be/v2ifWcnQs6M?t=25m53s" target="_blank">25:53</a>
+	</div>
+	<div class="example">
+		<ul>
+			<li>Used for addition and concatenation</li>
+		</ul>
+		<div class="codeblock">
+console.log(1 + 2);
+console.log("1 + 2 = " + (1 + 2));
+console.log("concat" + "enation");
+console.log("$ + 3 + 4 = " + ('$' + 3 + 4));
+		</div>
+		<p></p>
+		<ul>
+			<li>Convert strings to numbers</li>
+		</ul>
+		<div class="codeblock">
+console.log(+"3" + (+"4"));
+		</div>
+	</div>
 </div>
 
 <!-- ******************************************************************* -->
+
 <div class="section">
     <div class="section-heading">
         <p>28:20</p>
@@ -560,9 +641,11 @@ console.log('"5" === 5 is ' + ("5" === 5));
 </div>
 
 
+
 <div class="section">
     <div class="section-heading">
         <h2>&&</h2>
+		<a href="" target="_blank"></a>
     </div>
     <div class="example">
         <ul>
@@ -586,9 +669,12 @@ console.log(a && a.name);
     </div>
 </div>
 
+
+
 <div class="section">
     <div class="section-heading">
         <h2>||</h2>
+		<a href="" target="_blank"></a>
     </div>
     <div class="example">
         <ul>
@@ -612,9 +698,12 @@ console.log(b);
     </div>
 </div>
 
+
+
 <div class="section">
     <div class="section-heading">
         <h2>Statements</h2>
+		<a href="" target="_blank"></a>
     </div>
     <div class="example">
         <ul>
