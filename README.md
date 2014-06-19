@@ -1,4 +1,4 @@
-intro-to-javascript
+intro-to-javascript  
 ===============
 
 A simple interactive JavaScript tutorial.  Based on Douglas Crockford's presentation "The JavaScript Programming Language" (http://www.youtube.com/watch?v=v2ifWcnQs6M).
